@@ -7,7 +7,7 @@ $ sudo ./ArchToPi.sh <sdCard/DeviceName>
 ```
 
 
-### Description of the [ArchToPi.sh]()
+### Description of the [ArchToPi.sh](https://github.com/andriykutsevol/DGnet_ArchLinuxARM_Install/blob/main/ArchToPi.sh)
 - Run the script with a root privileges.
 If **ArchLinuxARM** installation archive is does not exists in the current directory
 will try to upload the **ArchLinuxARM-rpi-4-latest.tar.gz** from the [ArchLinuxARM](https://archlinuxarm.org/about/downloads)
@@ -47,7 +47,7 @@ Read an **./ssh/info.txt** for more details.
 where **192.168.0.105** is the PI's IP.
 
 
-### Description of the [ArchToPi_PostInstall.sh]()
+### Description of the [ArchToPi_PostInstall.sh](https://github.com/andriykutsevol/DGnet_ArchLinuxARM_Install/blob/main/ArchToPi_PostInstall.sh)
 
 - **./ArchToPi.sh** will copy the **./ArchToPi_PostInstall.sh** in to the **./root/root** directory
 
