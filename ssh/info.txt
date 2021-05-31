@@ -1,0 +1,21 @@
+# To generate keys
+ssh-keygen -t rsa -m PEM
+
+# !!! Mandatory on the local host.
+# Add key to ssh-agent  
+ssh-add <private key file name>
+
+# To remove all keys
+ssh-add -D
+
+# To find a key on PI
+ssh-keyscan -t rsa <ip address of the PI>
+
+# To remove old key from known_hosts
+ssh-keygen -R <ip address of the PI>
+
+
+
+
+# Example login
+ssh -vvv -i ./ssh/dgnet_alarm dgnet@192.168.0.105
