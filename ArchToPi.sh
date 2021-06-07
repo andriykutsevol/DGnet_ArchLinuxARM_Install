@@ -60,7 +60,7 @@ doUmount(){
 }
 
 
-doCheckIfMounted(
+doCheckIfMounted(){
   if mountpoint "$1" | grep -q 'is a mountpoint'; then
     echo ".$1 is mounted"
       read -p "Try to unmount? [y/n]: " yn
@@ -391,7 +391,7 @@ umount "$BOOT_DEVICE"
 umount "$ROOT_DEVICE"
 
 # To remove old key from known_hosts on this host.
-ssh-keygen -R 192.168.0.105
+# ssh-keygen -R 192.168.0.105
 
 
 echo "DONE"
