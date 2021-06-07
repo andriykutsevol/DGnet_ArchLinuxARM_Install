@@ -36,4 +36,15 @@ pacman -S base-devel --noconfirm
 
 doFlush
 
+pacman -S python-setuptools
+
+
+# pacman -S python-pip
+# error: failed retrieving file 'python-idna-3.1-1-any.pkg.tar.zst.sig' from mirror.osbeck.com
+
+# Therefore
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
+# python3 -m pip --version
+
 echo "Done"
